@@ -1,0 +1,41 @@
+@import "../constants";
+@import "../mixins";
+
+.feature {
+  background: @secindary-color;
+  &__container {
+    ._container();
+  }
+  &__wrapper {
+    ._wrapper();
+    ._center();
+  }
+  &__cards {
+    display: grid;
+    grid-template: repeat(1, 234px) / repeat(5, 250px);
+    .feature__card {
+      border: 1px solid @default-background-color;
+      ._center();
+      .feature__discription {
+        ._center();
+        flex-direction: column;
+
+        .feature__number h3 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 64px;
+          line-height: 75px;
+          color: @default-background-color;
+          margin-bottom: 20px;
+        }
+        .feature__name h2 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          color: @default-background-color;
+        }
+      }
+    }
+  }
+}
