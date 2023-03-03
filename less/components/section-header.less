@@ -2,10 +2,14 @@
 @import "../mixins";
 
 .section-header {
+  padding-top: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  ._container();
+  ._wrapper();
 
   &__subtitle {
     ._center();
@@ -15,8 +19,7 @@
     line-height: 44px;
 
     &-wrapper {
-      min-height: 80px;
-      height: 80px;
+      padding: 18px;
       ._center();
     }
   }
@@ -29,8 +32,8 @@
     text-transform: uppercase;
 
     &-wrapper {
-      min-height: 80px;
-      height: 80px;
+      padding: 19px;
+      margin-bottom: 24px;
       ._center();
     }
   }
