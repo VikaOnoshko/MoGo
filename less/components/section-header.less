@@ -1,8 +1,44 @@
-.section__header {
-  margin: 42px 172px 0px 168px;
+@import "../constants";
+@import "../mixins";
 
-  .header__subtitle {
-    .header__title {
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__subtitle {
+    ._center();
+    font-family: "Kaushan Script";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+
+    &-wrapper {
+      min-height: 80px;
+      height: 80px;
+      ._center();
     }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: "Raleway";
+    text-transform: uppercase;
+
+    &-wrapper {
+      min-height: 80px;
+      height: 80px;
+      ._center();
+    }
+  }
+
+  &__line {
+    max-width: 170px;
+    width: 100%;
+    height: 0px;
+    border: @primary-color solid 3px;
   }
 }
