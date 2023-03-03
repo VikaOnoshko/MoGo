@@ -1,0 +1,47 @@
+@import "../constants";
+@import "../mixins";
+
+.section-header {
+  padding-top: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  ._container();
+  ._wrapper();
+
+  &__subtitle {
+    ._center();
+    font-family: "Kaushan Script";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+
+    &-wrapper {
+      padding: 18px;
+      ._center();
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: "Raleway";
+    text-transform: uppercase;
+
+    &-wrapper {
+      padding: 19px;
+      margin-bottom: 24px;
+      ._center();
+    }
+  }
+
+  &__line {
+    max-width: 170px;
+    width: 100%;
+    height: 0px;
+    border: @primary-color solid 3px;
+  }
+}
