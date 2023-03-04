@@ -1,0 +1,40 @@
+@import "../constants";
+@import "../mixins";
+
+.devices {
+  position: relative;
+  background: url(../../assets/img/devices/bc.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  &__container {
+    ._container();
+    position: relative;
+  }
+  &__wrapper {
+    padding: 42px 0 0 0;
+    ._wrapper();
+  }
+  &__list {
+    .devices__tablet-wrapper {
+      .device__tablet {
+        position: relative;
+        z-index: 5;
+      }
+      .device__line {
+        position: absolute;
+        bottom: 419px;
+        right: 247px;
+      }
+    }
+  }
+}
