@@ -1,0 +1,64 @@
+@import "../constants";
+@import "../mixins";
+
+.services {
+  &__container {
+    ._container();
+  }
+  &__wrapper {
+    padding: 42px 0 91px;
+    ._wrapper();
+  }
+
+  &__cards {
+    margin-top: 88px;
+    ._center();
+    display: grid;
+    // grid-template: repeat(2, 139px) / repeat(3, 370px);
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    gap: 148px 30px;
+
+    .services__card {
+      display: flex;
+
+      .card__image {
+        &:nth-child(1)::before {
+          font-family: "icomoon" !important;
+          font-size: 40px;
+          content: "\e904";
+          color: black;
+        }
+      }
+
+      .card__information {
+        margin-left: 30px;
+
+        .card__header {
+          padding: 12px 0px 12px 0px;
+          h3 {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+
+            color: #2d3033;
+          }
+        }
+
+        .card__discription {
+          padding: 19px 0;
+          p {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #2d3033;
+          }
+        }
+      }
+    }
+  }
+}
