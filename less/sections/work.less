@@ -1,0 +1,33 @@
+@import "../constants";
+@import "../mixins";
+
+.work {
+  &__container {
+    ._container();
+  }
+  &__wrapper {
+    ._wrapper();
+  }
+
+  &__discription {
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      height: 118px;
+      margin-bottom: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__gallery {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+
+    .work__picture_3 {
+      grid-row-start: span 2;
+    }
+  }
+}
