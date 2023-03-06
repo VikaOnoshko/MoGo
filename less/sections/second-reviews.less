@@ -1,0 +1,21 @@
+@import "../constants";
+@import "../mixins";
+
+.second-reviews {
+  padding: 84px 0px;
+  &__container {
+    ._container();
+  }
+  &__wrapper {
+    ._wrapper();
+    padding: 42px 0px;
+  }
+
+  .second-reviews__courusel {
+    .reviews-courusel__img {
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
