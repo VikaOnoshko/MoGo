@@ -38,6 +38,7 @@
         position: relative;
 
         a {
+          font-size: 24px;
           &.basket {
             margin-right: 37px;
           }
@@ -46,9 +47,7 @@
           &.surch::before {
             color: black;
           }
-          &.basket::before {
-            ._icon-backet();
-          }
+
           &.surch::before {
             content: "\e909";
           }
@@ -77,6 +76,17 @@
             bottom: -10px;
           }
         }
+      }
+    }
+    .header__actions {
+      ul {
+        display: flex;
+        font-size: 24px;
+      }
+
+      li {
+        margin-right: 30px;
+        ._center();
       }
     }
   }
