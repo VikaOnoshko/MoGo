@@ -2,6 +2,7 @@
 @import "../mixins";
 
 .devices {
+  padding: 42px 0px 57px 0;
   position: relative;
   background: url(../../assets/img/devices/bc.png);
   background-size: cover;
@@ -21,20 +22,41 @@
     position: relative;
   }
   &__wrapper {
-    padding: 42px 0 0 0;
     ._wrapper();
   }
+
   &__list {
-    .devices__tablet-wrapper {
-      .device__tablet {
-        position: relative;
-        z-index: 5;
-      }
-      .device__line {
-        position: absolute;
-        bottom: 419px;
-        right: 247px;
-      }
+    ._center();
+    margin-top: 59px;
+  }
+  &__tablet {
+    background: url(../../assets/img/devices/pf.png);
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: bottom;
+    position: relative;
+    width: 670px;
+    height: 500px;
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &__phone {
+    background: url(../../assets/img/devices/tf.png);
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: top;
+    position: absolute;
+    bottom: -99px;
+    right: 222px;
+
+    width: 187px;
+    height: 394px;
+
+    &-img {
+      width: 100%;
     }
   }
 }
