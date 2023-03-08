@@ -38,20 +38,7 @@
         position: relative;
 
         a {
-          &.basket {
-            margin-right: 37px;
-          }
-
-          &.basket::before,
-          &.surch::before {
-            color: black;
-          }
-          &.basket::before {
-            ._icon-backet();
-          }
-          &.surch::before {
-            content: "\e909";
-          }
+          font-size: 24px;
         }
 
         .menu__link {
@@ -79,5 +66,20 @@
         }
       }
     }
+    .header__actions {
+      ul {
+        display: flex;
+        font-size: 24px;
+      }
+
+      li {
+        margin-right: 30px;
+        ._center();
+      }
+    }
+  }
+
+  &__list {
+    color: white;
   }
 }

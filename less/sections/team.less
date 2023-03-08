@@ -1,0 +1,95 @@
+@import "../constants";
+@import "../mixins";
+
+.team {
+  &__container {
+    ._container();
+  }
+  &__wrapper {
+    padding: 84px 0;
+    ._wrapper();
+  }
+
+  &__discription {
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      height: 118px;
+      margin-bottom: 42px;
+      ._center();
+    }
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    .team__card {
+      &:hover .team__card-button {
+        opacity: 1;
+      }
+    }
+    .team__photo {
+      position: relative;
+    }
+    .team__card-button {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      transform: translate(-16px, -16px);
+      background: linear-gradient(
+        360deg,
+        rgba(237, 215, 137, 0.9) 0%,
+        rgba(233, 130, 131, 0.9) 100%
+      );
+      width: 100%;
+      height: 100%;
+    }
+    .social__list {
+      ._center();
+      .social__item {
+        ._center();
+        width: 42px;
+        height: 42px;
+        background-color: rgba(249, 239, 207, 1);
+        margin-right: 1px;
+
+        &::before {
+          font-family: "icomoon" !important;
+          font-size: 30px;
+          content: "\e904";
+          color: #f38281;
+        }
+
+        &:hover {
+          background-color: #f38281;
+          &::before {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .team__user {
+    ._center();
+    padding: 26px;
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: #2d3033;
+    }
+  }
+  .team__profession {
+    padding: 5px;
+    ._center();
+    h5 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #2d3033;
+    }
+  }
+}
