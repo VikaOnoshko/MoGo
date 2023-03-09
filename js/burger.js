@@ -1,16 +1,15 @@
 const sidebar = document.querySelector(".sidebar");
 const headerBurger = document.querySelector(".header__burger");
+const sidebarCross = document.querySelector(".sidebar__cross");
 const sidebarList = document.querySelector(".sidebar__list");
 
-const onBurgerClick = () => {
-  sidebar.classList.toggle("sidebar_active");
-  headerBurger.classList.toggle("header__burger_active");
+const openSidebar = () => {
+  sidebar.classList.add("sidebar_active");
 };
-
-const onSelectLink = () => {
+const closeSidebar = () => {
   sidebar.classList.remove("sidebar_active");
-  headerBurger.classList.remove("header__burger_active");
 };
 
-headerBurger.onclick = onBurgerClick;
-sidebarList.onclick = onSelectLink;
+headerBurger.onclick = openSidebar;
+sidebarList.onclick = closeSidebar;
+sidebarCross.onclick = closeSidebar;
