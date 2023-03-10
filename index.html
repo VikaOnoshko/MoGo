@@ -9,40 +9,69 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">
-        <img src="./assets/img/banner/MoGo.png" alt="logo" />
-      </div>
-      <div class="header__navigation">
-        <div class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#" class="menu__link">about</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">service</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">work</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">blog</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">contact</a>
-            </li>
-          </ul>
+      <div class="header__container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <img src="./assets/img/banner/MoGo.png" alt="logo" />
+          </div>
+          <div class="header__navigation">
+            <div class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">about</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">service</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">work</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">blog</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__actions">
+              <ul class="header__list">
+                <li>
+                  <span class="icon-telega"></span>
+                </li>
+                <li>
+                  <span class="icon-surch"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__burger">
+            <button class="burger" type="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
-        <div class="header__actions">
-          <ul class="header__list">
-            <li>
-              <span class="icon-telega"></span>
-            </li>
-            <li>
-              <span class="icon-surch"></span>
-            </li>
-          </ul>
-        </div>
       </div>
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <div class="sidebar__logo">
+            <img src="./assets/img/banner/MoGo.png" alt="logo" />
+          </div>
+          <div class="sidebar__cross">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="sidebar__list">
+          <a href="#Feature" class="sidebar__link">About</a>
+          <a href="#About" class="sidebar__link">Service</a>
+          <a href="#Pricing" class="sidebar__link">work</a>
+          <a href="#Reviews" class="sidebar__link">blog</a>
+          <a href="#Contact" class="sidebar__link">Contact</a>
+        </div>
+      </aside>
     </header>
 
     <section class="banner">
@@ -53,7 +82,11 @@
               <h2>Creative Template</h2>
             </div>
             <div class="banner__title">
-              <h1>Welcome to MoGo</h1>
+              <h1>
+                Welcome<br />
+                to<br />
+                MoGo
+              </h1>
             </div>
             <div class="banner__line-wrapper">
               <div class="banner__line"></div>
@@ -134,9 +167,15 @@
             </div>
             <div class="about__picture">
               <img src="./assets/img/about/picture_1.png" alt="picture" />
+              <!-- <button class="about__picture-button" type="button">
+                <span class="about__picture-name">Super team</span> -->
+              </button>
             </div>
             <div class="about__picture">
               <img src="./assets/img/about/picture_2.png" alt="picture" />
+              <!-- <button class="about__picture-button" type="button">
+                <span class="about__picture-name">Super team</span> -->
+              </button>
             </div>
           </div>
         </div>
@@ -1226,5 +1265,6 @@
         </div>
       </div>
     </section>
+    <script src="./js/index.js"></script>
   </body>
 </html>
