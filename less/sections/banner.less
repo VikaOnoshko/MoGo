@@ -6,6 +6,7 @@
   background: url(../../assets/img/banner/fon.png);
   background-size: cover;
   background-repeat: no-repeat;
+
   &::before {
     content: "";
     position: absolute;
@@ -20,148 +21,311 @@
     );
   }
 
-  .banner__container {
+  &__container {
     ._container();
     position: relative;
+  }
 
-    .banner__wrapper {
-      ._wrapper();
-    }
+  &__wrapper {
+    ._wrapper();
   }
 
   &__body {
     padding-top: 177px;
+  }
 
-    .banner__subtitle {
-      display: flex;
-      height: 80px;
-      justify-content: center;
-      align-items: center;
+  &__subtitle {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
 
-      h2 {
-        font-family: "Kaushan Script";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 64px;
-        line-height: 93px;
-        display: flex;
-        text-align: center;
-        color: @default-background-color;
-      }
-    }
-
-    .banner__title {
-      ._center();
-
-      h1 {
-        font-family: "Montserrat";
-        font-weight: 700;
-        font-size: 144px;
-        line-height: 176px;
-        text-align: center;
-        text-transform: uppercase;
-        color: @default-background-color;
-      }
-    }
-
-    .banner__line {
-      max-width: 170px;
-      width: 100%;
-      border: 3px solid @default-background-color;
-
-      &-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 44px;
-        margin-bottom: 74px;
-      }
-    }
-
-    .banner__button {
-      max-width: 370px;
-      width: 100%;
-      height: 80px;
-      background: transparent;
-      font-family: "Raleway";
+    h2 {
+      font-family: "Kaushan Script";
       font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 93px;
+      display: flex;
+      text-align: center;
+      color: @default-background-color;
+    }
+  }
+
+  &__title {
+    ._center();
+
+    h1 {
+      font-family: "Montserrat";
       font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 144px;
+      line-height: 176px;
+      text-align: center;
       text-transform: uppercase;
       color: @default-background-color;
-      border: 4px solid @default-background-color;
+    }
 
-      &-wrapper {
-        ._center();
-        text-align: center;
-        margin-bottom: 116px;
+    br {
+      display: none;
+    }
+  }
+
+  &__line {
+    max-width: 170px;
+    width: 100%;
+    border: 3px solid @default-background-color;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 44px;
+      margin-bottom: 74px;
+    }
+  }
+
+  &__button {
+    max-width: 370px;
+    width: 100%;
+    min-height: 80px;
+    height: 100%;
+    background: transparent;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: @default-background-color;
+    border: 4px solid @default-background-color;
+
+    &-wrapper {
+      ._center();
+      text-align: center;
+      margin-bottom: 116px;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__tab {
+    width: 23.07%;
+
+    &_active {
+      .banner__progress {
+        progress {
+          &::-webkit-progress-bar {
+            background-color: @default-background-color;
+          }
+        }
+      }
+
+      .banner__discription {
+        color: @default-background-color;
       }
     }
   }
 
-  &__footer {
-    .banner__tabs {
-      display: flex;
+  &__progress {
+    progress {
+      background-color: @primary-color;
+      height: 3px;
       width: 100%;
-      justify-content: space-between;
-      .banner__tab {
-        width: 270px;
-
-        .banner__progress {
-          progress {
-            background-color: @primary-color;
-            height: 3px;
-            width: 100%;
-            &::-webkit-progress-bar {
-              background-color: @primary-contrast-color;
-            }
-            &::-webkit-progress-value {
-              background-color: @primary-color;
-            }
-          }
-        }
-
-        .banner__discription {
-          padding: 19px 0;
-          width: 270px;
-
-          font-family: "Raleway";
-          font-style: normal;
-          color: @primary-contrast-color;
-
-          .banner__number {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 42px;
-          }
-
-          .banner__sizez {
-            font-size: 18px;
-            line-height: 42px;
-            text-transform: uppercase;
-            font-weight: 500;
-          }
-
-          &_active {
-            color: @default-background-color;
-          }
-        }
-
-        &_active {
-          .banner__progress {
-            progress {
-              &::-webkit-progress-bar {
-                background-color: @default-background-color;
-              }
-            }
-          }
-
-          .banner__discription {
-            color: @default-background-color;
-          }
-        }
+      &::-webkit-progress-bar {
+        background-color: @primary-contrast-color;
       }
+      &::-webkit-progress-value {
+        background-color: @primary-color;
+      }
+    }
+  }
+
+  &__discription {
+    padding: 19px 0;
+    width: 100%;
+
+    font-family: "Raleway";
+    font-style: normal;
+    color: @primary-contrast-color;
+
+    .banner__number {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    .banner__sizez {
+      font-size: 18px;
+      line-height: 42px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    &_active {
+      color: @default-background-color;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner {
+    &__subtitle {
+      height: 54px;
+      h2 {
+        font-size: 48px;
+        line-height: 70px;
+      }
+    }
+
+    &__body {
+      padding-top: 120px;
+    }
+
+    &__title {
+      padding: 8px 0;
+      h1 {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 117px;
+      }
+    }
+    &__line-wrapper {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+
+    &__button-wrapper {
+      margin-bottom: 79px;
+    }
+
+    &__button {
+      min-height: 54px;
+      height: 100%;
+      max-width: 318px;
+      width: 100%;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__tab {
+      width: 23.49%;
+    }
+
+    &__discription {
+      padding: 5px 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    &__subtitle {
+      h2 {
+        font-size: 40px;
+      }
+    }
+    &__title {
+      padding: 0;
+    }
+    h1 {
+      font-size: 70px;
+      line-height: 85px;
+    }
+
+    &-wrapper {
+      margin-bottom: 51px;
+    }
+    &__tab {
+      width: 20%;
+    }
+    &__discription {
+      .banner__number {
+        font-weight: 700;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .banner {
+    h1 {
+      font-size: 60px;
+      line-height: 75px;
+    }
+
+    br {
+      display: block;
+    }
+    .banner__body {
+      padding-top: 90px;
+    }
+    .banner__subtitle h2 {
+      font-size: 30px;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .banner {
+    padding-bottom: 42px;
+    h1 {
+      font-size: 50px;
+      line-height: 80px;
+    }
+
+    &__subtitle h2 {
+      font-size: 35px;
+    }
+
+    &__discription {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    padding-bottom: 40px;
+  }
+
+  br {
+    display: none;
+  }
+  .banner {
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+    }
+
+    &__button {
+      max-width: 284px;
+      min-height: 53px;
+    }
+
+    &__button-wrapper {
+      margin-bottom: 54px;
+    }
+
+    .banner {
+      padding-bottom: 42px;
+    }
+
+    &__subtitle {
+      margin-bottom: 40px;
+    }
+
+    .banner__line-wrapper {
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    &__line {
+      max-width: 134px;
     }
   }
 }

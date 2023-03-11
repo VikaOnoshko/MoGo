@@ -1,0 +1,87 @@
+@import "../constants";
+@import "../mixins";
+
+.stories {
+  padding: 84px 0 85px 0;
+  &__container {
+    ._container();
+  }
+  &__wrapper {
+    ._wrapper();
+  }
+
+  &__cards {
+    margin-top: 42px;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+    column-gap: 30px;
+
+    .stories-card {
+      &__photo {
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      &__title {
+        padding: 6px 0;
+        h3 {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          color: @default-text-color;
+        }
+      }
+
+      &__text {
+        margin-bottom: 22px;
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: @default-text-color;
+        }
+      }
+      &__date {
+        ._center();
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background-color: @secindary-color;
+        bottom: 25px;
+        left: -14px;
+        flex-direction: column;
+
+        h4,
+        h5 {
+          color: @default-background-color;
+          text-transform: uppercase;
+        }
+        h4 {
+          margin-bottom: 10px;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 30px;
+        }
+        h5 {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+      &__footer {
+        display: flex;
+      }
+      &__stat {
+        margin-right: 22px;
+        & > span:first-child {
+          color: @secindary-color;
+          font-size: 20px;
+          margin-right: 18px;
+        }
+      }
+    }
+  }
+}
