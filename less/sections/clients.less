@@ -28,70 +28,173 @@
   .clients__cards {
     padding: 0 0 0 20px;
     display: grid;
-    margin-top: 88px;
+    margin-top: 42px;
     display: flex;
     justify-content: center;
     align-items: center;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     gap: 42px 51px;
+  }
+}
+.client-card {
+  display: flex;
 
-    .client-card {
+  &__photo {
+    margin-right: 30px;
+    max-width: 130px;
+    width: 100%;
+    max-height: 130px;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__title {
+    padding: 12px 0;
+    h3 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
       display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: @default-text-color;
+    }
+  }
+  &__profession {
+    h5 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: @default-text-color;
+    }
+  }
+  &__line {
+    max-width: 70px;
+    width: 100%;
+    height: 0px;
+    border: @primary-color solid 3px;
+    margin: 29px 0;
+  }
+  &__text {
+    padding: 33px 0;
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: @default-text-color;
+    }
+  }
+  &__profession {
+  }
+}
 
-      &__photo {
-        margin-right: 30px;
-        max-width: 130px;
-        width: 100%;
-        max-height: 130px;
-        height: 100%;
+@media screen and (max-width: 1024px) {
+  .clients {
+    padding: 28px 0px;
+  }
 
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-      &__title {
-        padding: 12px 0;
-        h3 {
-          font-style: normal;
-          font-weight: 700;
-          font-size: 24px;
-          line-height: 28px;
-          display: flex;
-          align-items: center;
-          text-transform: uppercase;
-          color: @default-text-color;
-        }
-      }
-      &__profession {
-        h5 {
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 21px;
-          display: flex;
-          align-items: center;
-          text-transform: uppercase;
-          color: @default-text-color;
-        }
-      }
-      &__line {
-        max-width: 70px;
-        width: 100%;
-        height: 0px;
-        border: @primary-color solid 3px;
-        margin: 32px 0;
-      }
-      &____text {
-        p {
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 21px;
-          display: flex;
-          align-items: center;
-          color: @default-text-color;
-        }
+  .client-card {
+    &__photo {
+      margin-right: 49px;
+      max-width: 88px;
+      max-height: 88px;
+    }
+
+    &__title {
+      padding: 8px 0;
+      h3 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
       }
     }
+
+    &__profession h5 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 13px;
+    }
+
+    &__line {
+      margin: 20px 0;
+      max-width: 48px;
+    }
+
+    &__text {
+      padding: 18px 0;
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+  .clients {
+    .clients__cards {
+      gap: 28px 53px;
+      margin-top: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .client-card {
+    &__line {
+      max-width: 50px;
+    }
+
+    &__photo {
+      margin-right: 30px;
+    }
+
+    &__text {
+      padding: 0px 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .clients {
+    .clients__cards {
+      grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+      padding: 0;
+    }
+  }
+
+  .client-card {
+    display: block;
+    &__discription {
+    }
+
+    &__line {
+      max-width: 134px;
+    }
+
+    &__title {
+      padding: 5;
+      margin-top: 20px;
+    }
+
+    &__text {
+      padding: 11px 0;
+      display: flex;
+      text-align: center;
+    }
+  }
+
+  .client-card__title,
+  .client-card__profession,
+  .client-card__line {
+    ._center();
   }
 }
