@@ -71,7 +71,10 @@
   .about .section-header__subtitle-wrapper {
     padding: 11px;
   }
-  .clients__section-header {
+  .about .section-header__title-wrapper {
+    margin-bottom: 20px;
+  }
+  .clients {
     .section-header__subtitle {
       font-weight: 400;
       font-size: 24px;
@@ -81,14 +84,39 @@
     .section-header__subtitle-wrapper {
       padding: 10px;
     }
-
     .section-header__title-wrapper {
-      padding: 6px;
-      margin-bottom: 12px;
+      padding: 11px;
+      margin-bottom: 16px;
+      .section-header__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+      }
     }
   }
-  .about .section-header__title-wrapper {
-    margin-bottom: 20px;
+  .stories {
+    .section-header__subtitle-wrapper {
+      padding: 16px;
+
+      .section-header__subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+    .section-header__title-wrapper {
+      padding: 20px;
+      margin-bottom: 20px;
+
+      .section-header__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    .section-header__line {
+      max-width: 148px;
+    }
   }
 }
 @media screen and (max-width: 480px) {
@@ -100,19 +128,6 @@
   .clients__section-header {
     .section-header__line {
       max-width: 134px;
-    }
-  }
-}
-@media screen and (max-width: 480px) {
-  .clients__section-header {
-    .section-header__title-wrapper {
-      padding: 11px;
-      margin-bottom: 16px;
-      .section-header__title {
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 28px;
-      }
     }
   }
 }
