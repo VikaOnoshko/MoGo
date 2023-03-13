@@ -19,3 +19,90 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .second-reviews {
+    padding: 0 0;
+    .reviews-courusel__img {
+      max-width: 115px;
+      max-height: 115px;
+    }
+
+    .reviews-courusel__item {
+      padding: 28px 0;
+    }
+  }
+
+  .second-reviews__wrapper {
+    padding: 58px 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .second-reviews {
+    .reviews-courusel__item {
+      ._center();
+      flex-direction: column;
+    }
+
+    .reviews-courusel__img {
+      margin-bottom: 41px;
+    }
+
+    .reviews-courusel__text {
+      text-align: center;
+      // p {
+      //   font-weight: 500;
+      //   font-size: 14px;
+      //   line-height: 16px;
+      // }
+    }
+
+    .reviews-courusel__parametry {
+      margin-top: 14px;
+      .reviews-courusel__line {
+        max-width: 57px;
+        margin-right: 28px;
+      }
+      .reviews-courusel__name {
+        h4 {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .second-reviews {
+    .reviews-courusel__text {
+      text-align: start;
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .second-reviews__wrapper {
+      padding: 29px 0;
+    }
+
+    .reviews-courusel__text {
+      p {
+        height: 66px;
+      }
+      margin-bottom: 0;
+    }
+
+    .reviews-courusel__discription {
+      margin: 0;
+    }
+
+    .reviews-courusel__navigation {
+      margin-top: 21px;
+    }
+  }
+}
