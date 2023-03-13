@@ -177,8 +177,29 @@
       margin-bottom: 15px;
     }
   }
-}
 
+  .map {
+    &__section-header {
+      .section-header__subtitle {
+        font-size: 28px;
+      }
+    }
+
+    .section-header__title {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .section-header__title-wrapper {
+      padding: 12px;
+      margin-bottom: 16px;
+    }
+
+    .section-header__line {
+      max-width: 148px;
+    }
+  }
+}
 @media screen and (max-width: 650px) {
   .clients__section-header {
     .section-header__line {
@@ -212,5 +233,16 @@
   .service__image {
     min-height: 142px;
     max-height: 100%;
+  }
+
+  .map {
+    padding: 42px 0;
+    .section-header__subtitle {
+      font-size: 42px;
+    }
+    .section-header__title-wrapper {
+      padding: 27px 0;
+      margin-bottom: 20px;
+    }
   }
 }
