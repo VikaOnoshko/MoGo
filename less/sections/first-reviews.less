@@ -82,6 +82,14 @@
   }
 }
 
+@media screen and (max-width: 725px) {
+  .first-reviews {
+    .reviews-courusel__icon {
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width: 490px) {
   .first-reviews,
   .second-reviews {
@@ -92,7 +100,7 @@
     .reviews-courusel__text {
       p {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 16px;
       }
     }
@@ -119,13 +127,18 @@
       }
 
       .reviews-courusel__name {
-        padding: 5px 0gogi;
+        padding: 5px 0;
         h4 {
           font-weight: 400;
           font-size: 18px;
           line-height: 26px;
         }
       }
+    }
+
+    .reviews-courusel__discription,
+    .second-reviews .reviews-courusel__discription {
+      margin: 0;
     }
   }
 }
