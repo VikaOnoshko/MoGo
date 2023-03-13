@@ -55,10 +55,17 @@
         margin-right: 1px;
 
         &:hover {
-          background-color: #f38281;
+          background-color: @primary-color;
           &::before {
             color: white;
           }
+          .social__link span {
+            color: white;
+          }
+        }
+        .social__link span {
+          color: @primary-color;
+          font-size: 30px;
         }
       }
     }
