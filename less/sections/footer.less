@@ -447,11 +447,20 @@
 }
 
 @media screen and (max-width: 600px) {
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .footer__blog {
     display: block;
   }
   .footer__contacts {
     flex-direction: column;
     margin-bottom: 0;
+  }
+
+  .footer__contacts > div {
+    margin-right: 0px;
   }
 }
