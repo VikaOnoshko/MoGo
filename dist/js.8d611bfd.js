@@ -3,4 +3,4 @@ var e=document.querySelector(".sidebar"),c=document.querySelector(".header__burg
 },{}],"QvaY":[function(require,module,exports) {
 "use strict";require("./burger");
 },{"./burger":"toNQ"}]},{},["QvaY"], null)
-//# sourceMappingURL=js.8d611bfd.js.map
+//# sourceMappingURL=..../js.8d611bfd.js.map
