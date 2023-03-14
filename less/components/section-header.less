@@ -55,36 +55,215 @@
   }
 }
 
-.devices__section-header {
-  .section-header__title-wrapper {
+.devices {
+  &__section-header {
     padding: 0px;
+  }
+
+  .section-header__title-wrapper {
+    padding: 0;
   }
 }
 
-.section-header__title {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
-}
-.section-header__title-wrapper {
-  padding: 20px;
+.clients__section-header {
+  .section-header__title-wrapper {
+    padding: 17px;
+  }
 }
 
-.section-header__line {
-  max-width: 148px;
-}
+@media screen and (max-width: 1370px) {
+  .team {
+    .section-header__subtitle-wrapper {
+      padding: 16px;
+      h3 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+    .section-header__title-wrapper {
+      padding: 20px 0;
+      margin-bottom: 20px;
+      h2 {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
 
+    .section-header__line {
+      max-width: 148px;
+    }
+  }
+}
 @media screen and (max-width: 1024px) {
   .about .section-header__subtitle-wrapper {
     padding: 11px;
   }
-
   .about .section-header__title-wrapper {
     margin-bottom: 20px;
   }
+  .clients {
+    .section-header__subtitle {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+    }
+
+    .section-header__subtitle-wrapper {
+      padding: 10px;
+    }
+    .section-header__title-wrapper {
+      padding: 11px;
+      margin-bottom: 16px;
+      .section-header__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
+  .stories {
+    .section-header__subtitle-wrapper {
+      padding: 16px;
+
+      .section-header__subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+    .section-header__title-wrapper {
+      padding: 20px;
+      margin-bottom: 20px;
+
+      .section-header__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    .section-header__line {
+      max-width: 148px;
+    }
+  }
+
+  .service {
+    .section-header__subtitle-wrapper {
+      padding: 16px 0;
+    }
+
+    .section-header__subtitle {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+    }
+
+    .section-header__title {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .section-header__title-wrapper {
+      padding: 20px;
+    }
+
+    .section-header__line {
+      max-width: 148px;
+    }
+
+    .section-header__title-wrapper {
+      margin-bottom: 15px;
+    }
+  }
+
+  .map {
+    &__section-header {
+      .section-header__subtitle {
+        font-size: 28px;
+      }
+    }
+
+    .section-header__title {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .section-header__title-wrapper {
+      padding: 12px;
+      margin-bottom: 16px;
+    }
+
+    .section-header__line {
+      max-width: 148px;
+    }
+  }
+
+  .work {
+    .section-header__subtitle-wrapper {
+      padding: 10px;
+      h3 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+    .section-header__title-wrapper {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+      padding: 6px;
+    }
+
+    .section-header__line {
+      max-width: 146px;
+    }
+  }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
+  .clients__section-header {
+    .section-header__line {
+      max-width: 134px;
+    }
+  }
+  .service {
+    .section-header__title-wrapper {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 485px) {
   .section-header__line {
     max-width: 134px;
+  }
+
+  .team {
+    .section-header__line {
+      max-width: 132px;
+    }
+  }
+
+  .service {
+    .section-header__line {
+      max-width: 134px;
+    }
+  }
+
+  .service__image {
+    min-height: 142px;
+    max-height: 100%;
+  }
+
+  .map {
+    padding: 42px 0;
+    .section-header__subtitle {
+      font-size: 42px;
+    }
+    .section-header__title-wrapper {
+      padding: 27px 0;
+      margin-bottom: 20px;
+    }
   }
 }
