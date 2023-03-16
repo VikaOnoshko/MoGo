@@ -27,6 +27,7 @@
     .team__card {
       &:hover .team__card-button {
         opacity: 1;
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
       }
     }
     .team__photo {
@@ -57,10 +58,10 @@
         &:hover {
           background-color: @primary-color;
           &::before {
-            color: white;
+            color: @default-background-color;
           }
           .social__link span {
-            color: white;
+            color: @default-background-color;
           }
         }
         .social__link span {
@@ -78,7 +79,7 @@
       font-size: 24px;
       line-height: 28px;
       text-transform: uppercase;
-      color: #2d3033;
+      color: @default-text-color;
     }
   }
   .team__profession {
@@ -89,7 +90,7 @@
       font-size: 18px;
       line-height: 21px;
       text-transform: uppercase;
-      color: #2d3033;
+      color: @default-text-color;
     }
   }
 }
